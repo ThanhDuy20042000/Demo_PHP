@@ -12,4 +12,3 @@ function spcungloai($id,$phanloai1){
     $spcl = pdo_query($sql);
     return $spcl;
 }
-?>

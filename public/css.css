@@ -177,14 +177,15 @@
         border: 0;
         -webkit-padding-start: 0;
     }
-    .mtsp ul li{
+
+    .mtsp ul li {
         display: flex;
         list-style-type: none;
         width: 100%;
         margin-top: 2%;
         font-size: 18px;
     }
-    
+
 
     .mtsp {
         height: 200px;
@@ -260,9 +261,9 @@
     .raise:hover,
     .raise:focus {
         box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-      
+
     }
-  
+
     .raise {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -275,7 +276,7 @@
         min-width: 250px;
         height: 50px;
         font-size: inherit;
-        font-family: MinionPro,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-family: MinionPro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
     .raise:hover {
@@ -292,14 +293,17 @@
         display: inline-block;
         z-index: 1;
     }
-    .numbersl{
+
+    .numbersl {
         border: 3px solid rgb(0 0 0 / 79%);
         margin-left: 5%;
     }
-    input[type="number" i] {
+
+    input[type="number"i] {
         text-align: center;
         border-radius: 5px;
     }
-    img{
+
+    img {
         border-radius: 5px;
     }

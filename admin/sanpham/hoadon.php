@@ -1,14 +1,14 @@
 <div class="thankyou">
-   
-  <h1 class="display-3">Thank You!</h1>
+
+    <h1 class="display-3">Thank You!</h1>
 </div>
 
 <div class="fromdh">
     <div class="ttdh">
         <h2 class="h5-mi-des-bk">Thông tin người nhận hàng</h2>
         <?php
-         $tongdonhang= number_format($tongdonhang,0,".",".");
-        echo' <table>
+        $tongdonhang = number_format($tongdonhang, 0, ".", ".");
+        echo ' <table>
         <tr>
             <td>Tên người nhận :</td>
             <td class ="tdhd">' . $ten . ' </td>
@@ -70,10 +70,10 @@
             </table>
         </div>
     </div>
-  
+
 </div>
-  <div class="end">
-      <a href="index.php?act=hoanthanh">
-      <input type="button"  class="raise" value="Hoàn thành giao dịch">
-      </a>
-    </div>
+<div class="end">
+    <a href="index.php?act=hoanthanh">
+        <input type="button" class="raise" value="Hoàn thành giao dịch">
+    </a>
+</div>

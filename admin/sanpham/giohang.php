@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="tyle.css">
 </head>
+
 <body>
     <div class="ttgiohang">
-    <span class="h5-mi-des-bk">Giỏ Hàng Của Bạn</span>
+        <span class="h5-mi-des-bk">Giỏ Hàng Của Bạn</span>
         <div class="giohang">
             <table>
                 <tr>
@@ -41,9 +43,10 @@
                     <input type="button" class="raise" value="Tiếp tục mua sắm"></a>
                     <a href="index.php?act=dathang">
                     <input type="button" class="raise" value="Đặt hàng"></a> ';
-            ?>
+                ?>
             </table>
         </div>
     </div>
 </body>
+
 </html>

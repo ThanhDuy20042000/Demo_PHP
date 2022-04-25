@@ -5,9 +5,9 @@ function giohang()
     $i = 0;
     foreach ($_SESSION['giohang'] as $giohang) {
         $tong = $giohang[3] * $giohang[4];
-        $tongtien += $tong; 
-        $giohang[3]= number_format($giohang[3],0,".",".");
-        $tong= number_format($tong,0,".",".");
+        $tongtien += $tong;
+        $giohang[3] = number_format($giohang[3], 0, ".", ".");
+        $tong = number_format($tong, 0, ".", ".");
         $xoa = '<a href="index.php?act=xoa&idgio=' . $i . '"><input type="button" value="Xóa"></a>';
         echo '
             <tr>
@@ -20,7 +20,7 @@ function giohang()
             </tr>';
         $i += 1;
     }
-    $tongtien= number_format($tongtien,0,".",".");
+    $tongtien = number_format($tongtien, 0, ".", ".");
     echo '
             <tr>
                 <td colspan="4">Tổng giá trị đơn hàng</td>
@@ -38,8 +38,8 @@ function hoadon()
     foreach ($_SESSION['giohang'] as $giohang) {
         $tong = $giohang[3] * $giohang[4];
         $tongtien += $tong;
-        $giohang[3]= number_format($giohang[3],0,".",".");
-        $tong= number_format($tong,0,".",".");
+        $giohang[3] = number_format($giohang[3], 0, ".", ".");
+        $tong = number_format($tong, 0, ".", ".");
         echo '
             <tr>
                 <td class="imgw"><img src ="public/image/' . $giohang[2] . '"></td>
@@ -50,7 +50,6 @@ function hoadon()
             </tr>';
         $i += 1;
     }
-    
 }
 function tongdon()
 {

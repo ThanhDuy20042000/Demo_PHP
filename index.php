@@ -1,6 +1,6 @@
 <?php
 ob_start(); //start ob tạo vùng nhớ đệm lưu trữ // Xuất được header
-session_start();//khoi tao session
+session_start(); //khoi tao session
 include "model/pdo.php";
 include "model/ham_main.php";
 include "model/chitietsp.php";
@@ -42,24 +42,25 @@ if (isset($_GET['act'])) {
             $ten = $_POST['ten'];
             $hinhanh = $_POST['hinhanh'];
             $gia = $_POST['gia'];
-            $soluong =$_POST['soluong'];
+            $soluong = $_POST['soluong'];
             $tong = $soluong * $gia;
-           
+
             //kiemtrasp trung
             $kt = 0;
-            for ($i=0; $i < sizeof($_SESSION['giohang']) ; $i++) { 
-               if($_SESSION['giohang'][$i][1]==$ten){
-                  $kt =1;
-                  $soluongnew= $soluong + $_SESSION['giohang'][$i][4];
-                  $_SESSION['giohang'][$i][4] =$soluongnew;
+            for ($i = 0; $i < sizeof($_SESSION['giohang']); $i++) {
+               if ($_SESSION['giohang'][$i][1] == $ten) {
+                  $kt = 1;
+                  $soluongnew = $soluong + $_SESSION['giohang'][$i][4];
+                  $_SESSION['giohang'][$i][4] = $soluongnew;
                   break;
                }
             }
             //Them sp vao session
-           if ($kt == 0) {
-            $gio = [$id, $ten, $hinhanh, $gia, $soluong, $tong];
-            array_push($_SESSION['giohang'], $gio);
-           } include "admin/sanpham/giohang.php";
+            if ($kt == 0) {
+               $gio = [$id, $ten, $hinhanh, $gia, $soluong, $tong];
+               array_push($_SESSION['giohang'], $gio);
+            }
+            include "admin/sanpham/giohang.php";
          } else {
             include 'admin/main.php';
          }
@@ -93,20 +94,20 @@ if (isset($_GET['act'])) {
             $tongdonhang = tongdon();
             $idbill = datadh($ten, $sdt, $dc, $gc, $ngaydat, $tongdonhang);
          }
-         for ($i=0; $i < sizeof($_SESSION['giohang']); $i++) { 
+         for ($i = 0; $i < sizeof($_SESSION['giohang']); $i++) {
             $name = $_SESSION['giohang'][$i][1];
             $gia = $_SESSION['giohang'][$i][3];
             $soluong = $_SESSION['giohang'][$i][4];
             $tongdon = $_SESSION['giohang'][$i][5];
             $img = $_SESSION['giohang'][$i][2];
-            datagh($img,$name,$gia,$soluong,$tongdon,$idbill);
+            datagh($img, $name, $gia, $soluong, $tongdon, $idbill);
          }
          include "admin/sanpham/hoadon.php";
          break;
-         case 'hoanthanh':
-            session_unset();
-            include "admin/main.php";
-            break;
+      case 'hoanthanh':
+         session_unset();
+         include "admin/main.php";
+         break;
 
 
 

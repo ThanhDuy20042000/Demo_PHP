@@ -3,7 +3,7 @@
         <span class="h5-mi-des-bk">Thông tin nhận hàng</span>
         <p><span class="err">* Không được để trống</span></p>
         <?php
-        echo'
+        echo '
         <form method="post"action="index.php?act=xndathang">
             Tên người nhận: <input type="text" name="name" value="">
             <br><br>
@@ -49,6 +49,6 @@
         <?php
         echo ' 
               <a href="index.php?act=xoatb">
-              <input type="button"  class="raise" value="Xóa giỏ hàng"></a>';?>
+              <input type="button"  class="raise" value="Xóa giỏ hàng"></a>'; ?>
     </div>
 </div>

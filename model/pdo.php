@@ -112,4 +112,3 @@ function pdo_query_value($sql)
         unset($conn);
     }
 }
-?>

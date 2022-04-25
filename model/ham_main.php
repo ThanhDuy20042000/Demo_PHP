@@ -25,4 +25,3 @@ function main_phulieu() {
     $list_spcoffee = pdo_query($sql);
     return $list_spcoffee;
 }
-?>

@@ -14,9 +14,9 @@
             <li>
                 <?php
                 extract($ctsp);
-                $giagoc= number_format($giagoc,0,".",".");
+                $giagoc = number_format($giagoc, 0, ".", ".");
                 $giafm = $gia;
-                $giafm = number_format($giafm,0,".",".");
+                $giafm = number_format($giafm, 0, ".", ".");
                 echo ' <div class="zom">
                     <ul>
                         <li>
@@ -50,12 +50,12 @@
                     </div>  
                         <div class="mtsp">
                             <ul>
-                                <li>'.$mota.'
+                                <li>' . $mota . '
                                 </li>
                             </ul>
                         </div>
                     </div>';
-                   
+
                 ?>
 
             </li>
