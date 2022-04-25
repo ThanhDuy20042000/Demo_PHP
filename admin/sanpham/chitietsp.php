@@ -76,7 +76,7 @@
             <?php
             foreach ($spcl as $sanpham) {
                 extract($sanpham);
-                $linksp = "index.php?act=chitiet&id=" . $id;
+                $linksp = "index.php?act=chitiet&id=".$id;
                 echo
                 '<li>
                     <div class="zom">

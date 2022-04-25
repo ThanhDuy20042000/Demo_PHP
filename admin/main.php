@@ -167,9 +167,9 @@
         <div class="spkm">
             <ul>
                 <?php
-                $main_coffee = main_mayphacaffee();
-                foreach ($main_coffee as $sanpham) {
-                    extract($sanpham);
+                $main_may = main_mayphacaffee();
+                foreach ($main_may as $may) {
+                    extract($may);
                         $linksp = "index.php?act=chitiet&id=".$id;
                         $gia = number_format($gia,0,".",".");
                         $giagoc = number_format($giagoc,0,".",".");

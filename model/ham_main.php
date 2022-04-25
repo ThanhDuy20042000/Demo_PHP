@@ -17,8 +17,8 @@ function main_coffe() {
 }
 function main_mayphacaffee() {
     $sql = "select * from sanpham where phanloai1 = 3 order by id desc limit 0,6 "; // lấy sản phẩm mới nhất và lấy 6 sản phẩm
-    $list_spcoffee = pdo_query($sql);
-    return $list_spcoffee;
+    $list_may = pdo_query($sql);
+    return $list_may;
 }
 function main_phulieu() {
     $sql = "select * from sanpham where phanloai1 = 4 order by id desc limit 0,6 "; // lấy sản phẩm mới nhất và lấy 6 sản phẩm
