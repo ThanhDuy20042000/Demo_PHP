@@ -129,7 +129,7 @@ if (isset($_GET['act'])) {
             break;
           
          case 'blog':
-            include "admin/dangky/blog.php";
+            include "admin/blog/blog.php";
             break;
           
 
