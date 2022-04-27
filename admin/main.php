@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="public/style.css">
 </head>
+
 <body>
     <main>
-        <div class="SP">
+        <div class="SP" id="spkm">
             <div class=main_SP>
                 <div><span class="h5-mi-des-bk"> Sản Phẩm Khuyến Mãi</span></div>
             </div>
@@ -20,15 +22,15 @@
                     $main = main();
                     foreach ($main as $sanpham) {
                         extract($sanpham);
-                        $gia = number_format($gia,0,".",".");
-                        $giagoc = number_format($giagoc,0,".",".");
-                        if ($phanloai ="sanphamkhuyenmai")
-                        $linksp = "index.php?act=chitiet&id=".$id; {
+                        $gia = number_format($gia, 0, ".", ".");
+                        $giagoc = number_format($giagoc, 0, ".", ".");
+                        if ($phanloai = "sanphamkhuyenmai")
+                            $linksp = "index.php?act=chitiet&id=" . $id; {
                             echo '<li>
                                     <div class="zom">
                                         <div class="text_aline">
-                                        <a href="'.$linksp.'"> <img src="public/image/' . $hinhanh . '"></a><br>
-                                            <a href="'.$linksp.'"><div class="text-3">' . $ten . '</div></a>
+                                        <a href="' . $linksp . '"> <img src="public/image/' . $hinhanh . '"></a><br>
+                                            <a href="' . $linksp . '"><div class="text-3">' . $ten . '</div></a>
                                             <br>
                                             <del>' . $giagoc . '   đ</del><br>
                                             <p>' . $gia . '   đ</p>
@@ -40,7 +42,7 @@
                     ?>
                 </ul>
             </div>
-            <div class="main_SP">
+            <div class="main_SP" id="spmoi">
                 <div><span class="h5-mi-des-bk"> Hàng Mới Về</span></div>
             </div>
             <div class="spkm">
@@ -48,16 +50,16 @@
                     $main_new = main_new();
                     foreach ($main_new as $sanpham) {
                         extract($sanpham);
-                        $gia = number_format($gia,0,".",".");
-                        $giagoc = number_format($giagoc,0,".",".");
-                        $linksp = "index.php?act=chitiet&id=".$id;
+                        $gia = number_format($gia, 0, ".", ".");
+                        $giagoc = number_format($giagoc, 0, ".", ".");
+                        $linksp = "index.php?act=chitiet&id=" . $id;
                         echo '<li>
                         <div class="zom">
                         <div class="text_aline">
-                        <a href="'.$linksp.'">
+                        <a href="' . $linksp . '">
                         <img src="public/image/' . $hinhanh . '"><br>
                         </a>
-                        <a href="'.$linksp.'"><div class="text-3">' . $ten . '</div></a>
+                        <a href="' . $linksp . '"><div class="text-3">' . $ten . '</div></a>
                         <br>
                         <del>' . $giagoc . ' đ</del><br>
                         <p>' . $gia . '    đ</p>
@@ -67,7 +69,7 @@
                     ?>
                 </ul>
             </div>
-            <div class=main_SP>
+            <div class=main_SP id="spbc">
                 <div><span class="h5-mi-des-bk"> Sản Phẩm Bán chạy nhất</span></div>
             </div>
             <div class="spkm">
@@ -134,19 +136,19 @@
         </div>
         <div class="spkm">
             <ul>
-                <?php 
+                <?php
                 $main_coffee = main_coffe();
                 foreach ($main_coffee as $sanpham) {
                     extract($sanpham);
-                     $gia = number_format($gia,0,".",".");
-                    $giagoc = number_format($giagoc,0,".",".");
-                        $linksp = "index.php?act=chitiet&id=".$id;
-                        echo 
-                        '<li><div class="zom">
+                    $gia = number_format($gia, 0, ".", ".");
+                    $giagoc = number_format($giagoc, 0, ".", ".");
+                    $linksp = "index.php?act=chitiet&id=" . $id;
+                    echo
+                    '<li><div class="zom">
                             <div class="text_aline">
-                            <a href="'.$linksp.'">
+                            <a href="' . $linksp . '">
                                 <img src="public/image/' . $hinhanh . '"><br>
-                                <a href="'.$linksp.'"><div class="text-3">' . $ten . '</div></a>
+                                <a href="' . $linksp . '"><div class="text-3">' . $ten . '</div></a>
                                 <br>
                                 <del>' . $giagoc . '   đ</del><br>
                                 <p>' . $gia . ' đ</p>
@@ -170,15 +172,15 @@
                 $main_may = main_mayphacaffee();
                 foreach ($main_may as $may) {
                     extract($may);
-                        $linksp = "index.php?act=chitiet&id=".$id;
-                        $gia = number_format($gia,0,".",".");
-                        $giagoc = number_format($giagoc,0,".",".");
-                        echo 
-                        '<li><div class="zom">
+                    $linksp = "index.php?act=chitiet&id=" . $id;
+                    $gia = number_format($gia, 0, ".", ".");
+                    $giagoc = number_format($giagoc, 0, ".", ".");
+                    echo
+                    '<li><div class="zom">
                             <div class="text_aline">
-                            <a href="'.$linksp.'">
+                            <a href="' . $linksp . '">
                                 <img src="public/image/' . $hinhanh . '"><br>
-                                <a href="'.$linksp.'"><div class="text-3">' . $ten . '</div></a>
+                                <a href="' . $linksp . '"><div class="text-3">' . $ten . '</div></a>
                                 <br>
                                 <del>' . $giagoc . '    đ</del><br>
                                 <p>' . $gia . '   đ</p>
@@ -200,15 +202,15 @@
                 $main_phulieu = main_phulieu();
                 foreach ($main_phulieu as $sanpham) {
                     extract($sanpham);
-                    $gia = number_format($gia,0,".",".");
-                    $giagoc = number_format($giagoc,0,".",".");
-                    $linksp = "index.php?act=chitiet&id=".$id;
-                        echo 
-                        '<li><div class="zom">
+                    $gia = number_format($gia, 0, ".", ".");
+                    $giagoc = number_format($giagoc, 0, ".", ".");
+                    $linksp = "index.php?act=chitiet&id=" . $id;
+                    echo
+                    '<li><div class="zom">
                             <div class="text_aline">
-                            <a href="'.$linksp.'">
+                            <a href="' . $linksp . '">
                                 <img src="public/image/' . $hinhanh . '"><br>
-                                <a href="'.$linksp.'"><div class="text-3">' . $ten . '</div></a>
+                                <a href="' . $linksp . '"><div class="text-3">' . $ten . '</div></a>
                                 <br>
                                 <del>' . $giagoc . '    đ</del><br>
                                 <p>' . $gia . '   đ</p>
@@ -315,50 +317,53 @@
         </div>
         <div class="coffee_world">
             <div class="zom">
-            <div class="row10">
-                <h1>Thế Giới Cafe</h1>
-            </div>
-            <div class="row03">
-                <div class="column03">
-                    <a href=""> <img src="public/image/image_cafe_work/THE-ART-COFFEE-HOUSE-1.jpg">
-                        <b>Văn hóa cà phê sài gòn</b>
+                <div class="row10">
+                    <h1>Thế Giới Cafe</h1>
+                </div>
+                <div class="row03">
+                    <div class="column03">
+                        <a href=""> <img src="public/image/image_cafe_work/THE-ART-COFFEE-HOUSE-1.jpg"></a>
+                        <a href=""><b>Văn hóa cà phê sài gòn</b></a>
                         <p>Otc31 - 02:44 PM</p>
-                    </a>
-                </div>
-                <div class="column04">
-                    <div class="row05">
-                        <div class="column05">
-                            <a href=""> <img src="public/image/image_cafe_work/190.jpg">
-                                <b>Cà phê xưa và nay</b>
+
+                    </div>
+                    <div class="column04">
+                        <div class="row05">
+                            <div class="column05">
+                                <a href=""> <img src="public/image/image_cafe_work/190.jpg"></a>
+                                <a href=""> <b>Cà phê xưa và nay</b> </a>
                                 <p>Nov 22- 04:44 PM</p>
-                            </a>
+
+                            </div>
+                            <div class="column05">
+                                <a href=""> <img src="public/image/image_cafe_work/42425d5f373553a3f986734d1f575bf7.jpg"></a>
+                                <a href=""> <b> Sự tinh tế trong văn hóa cà phê của người ý</b> </a>
+                                <p>Nov 22- 04:44 PM</p>
+
+                            </div>
                         </div>
-                        <div class="column05">
-                            <a href=""> <img src="public/image/image_cafe_work/42425d5f373553a3f986734d1f575bf7.jpg">
-                                <b> Sự tinh tế trong văn hóa cà phê của người ý</b>
-                                <p>Nov 22- 04:44 PM</p>
-                            </a>
+                        <div class="row05">
+                            <div class="column05">
+                                <a href=""> <img src="public/image/image_cafe_work/CA-PHE-Scandinavian.png"></a>
+                                <a href=""><b> Top những phong cách quán cà phê chất nhất hiện nay</b></a>
+                                    <p>Nov 22- 04:44 PM</p>
+                                </a>
+
+                            </div>
+                            <div class="column05">
+                                <a href=""> <img src="public/image/image_cafe_work/QUAY-PHA-CHE.jpg"></a>
+                                <a href="">  <b> Có gì bênh trong một quầy pha chế cà phê</b></a>
+                                    <p>Nov 22- 04:44 PM</p>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="row05">
-                        <div class="column05">
-                            <a href=""> <img src="public/image/image_cafe_work/CA-PHE-Scandinavian.png">
-                                <b> Top những phong cách quán cà phê chất nhất hiện nay</b>
-                                <p>Nov 22- 04:44 PM</p>
-                            </a>
-                        </div>
-                        <div class="column05">
-                            <a href=""> <img src="public/image/image_cafe_work/QUAY-PHA-CHE.jpg">
-                                <b> Có gì bênh trong một quầy pha chế cà phê</b>
-                                <p>Nov 22- 04:44 PM</p>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-            </div>
             </div>
         </div>
-      
+
     </main>
 </body>
+
 </html>

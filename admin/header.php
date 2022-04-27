@@ -35,16 +35,16 @@
                             </a>
                         </li>
                         <li>
-                            <a href=""> Trở thành đối tác</a>
+                            <a href="index.php?act=dkdt"> Trở thành đối tác</a>
                         </li>
                         <li>
-                            <a href=""> Kiểm tra bảo hành</a>
+                            <a href="index.php?act=ktbh"> Kiểm tra bảo hành</a>
                         </li>
                         <li>
-                            <a href=""> Đăng nhập</a>
+                            <a href="index.php?act=ktbh"> Đăng nhập</a>
                         </li>
                         <li>
-                            <a href=""> Đăng ký</a>
+                            <a href="index.php?act=ktbh"> Đăng ký</a>
                         </li>
                     </ul>
                 </div>
@@ -61,10 +61,10 @@
 
                 <div class="header_seach">
                     <div class="block-search">
-                        <form class="form minisearch" id="search_mini_form" action="" method="get">
+                        <form class="form minisearch" id="search_mini_form" action="index.php?act=timkiem" method="post">
                             <div class="field search">
                                 <div class="control">
-                                    <input id="search" type="text" name="timkiem" value="" placeholder="Tìm tại đây vô vàn sản phẩm cà phê chính hãng từ tập đoàn Trung Nguyên Legend..." class="text-sm-le-des-gr input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
+                                    <input id="search" type="text" name="smf" value="" placeholder="Tìm tại đây vô vàn sản phẩm cà phê chính hãng từ tập đoàn Trung Nguyên Legend..." class="text-sm-le-des-gr input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
                                     <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
                                 </div>
                             </div>
@@ -97,19 +97,19 @@
             </ul>
             <div class="no1">
                 <ul>
-                    <li><a href="">
+                    <li><a href="#spkm">
                             <img src="public/image/item/gift-box-reward-bonus-surprise_3x.png">
                             Sản phẩm khuyến mãi</a>
                     </li>
-                    <li><a href="">
+                    <li><a href="#spbc">
                             <img src="public/image/item/star-icon_1.png">
                             Bán chạy nhất
                     </li></a>
-                    <li><a href="">
+                    <li><a href="#spmoi">
                             <img src="public/image/item/new-icon_1.png">
                             Sản phẩm mới</a>
                     </li>
-                    <li><a href="">
+                    <li><a href="index.php?act=blog">
                             <img src="public/image/item/cup-coffee.png">
                             Blog cà phê</a>
                     </li>
@@ -145,10 +145,22 @@
                                 <div class="column01"> Giá tốt cho toàn đối tượng mua số lượng lớn</div>
                             </div>
                         </li>
+                        <li> 
+                            <div class="row01">
+                                <div class="column01">
+                                <img src="public/image/icon_na/shield-protection-guard-insurance-money.png">
+                                </div>
+                                <div class="column01">  Thanh toán an toàn tuyệt đối</div>
+                            </div>
                         </li>
-                        <li> <img src="public/image/icon_na/shield-protection-guard-insurance-money.png"> Thanh toán an toàn tuyệt đối
-                        </li>
-                        <li> <img src="public/image/icon_na/van-truck-delivery-fast-service.png">Giao hàng toàn quốc đảm bảo
+                        <li> 
+                        <div class="row01">
+                                <div class="column01">
+                                <img src="public/image/icon_na/van-truck-delivery-fast-service.png">
+                                </div>
+                                <div class="column01"> Giao hàng toàn quốc đảm bảo</div>
+                            </div>
+                          
                         </li>
                         <li>
                             <div class="row01">
@@ -165,12 +177,13 @@
                 <ul>
                     <li><a href="#">
                             <img src="public/image/iteam1/coffee-bean_3x.png"> Cà phê</a>
-                        <ul class="sub-menu">
+                           
+                        <ul class="sub-menu ">
                             <div class="row">
-                                <li class="column">
+                            <div class="column">
 
                                     <H1> CÀ PHÊ </H1>
-                                </li>
+                            </div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -188,16 +201,18 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                                <div class="column2"> Cà phê Hạt</div>
                             </div>
                         </ul>
+                          
                     </li>
                     <li><a href="#"> <img src="public/image/iteam1/images_1.jpg">Máy Cà phê</a>
-                        <ul class="sub-menu">
+                  
+                        <ul class="sub-menu menu1">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                            <div class="column">
+                                    <H1> MÁY CÀ PHÊ </H1>
+                            </div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -215,18 +230,19 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
+                  
                     </li>
                     <li><a href="#"> <img src="public/image/iteam1/coffee-maker-moka-pot_3x.png">
                             Công dụng cụ cà phê
                         </a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu menu2">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                            <div class="column">
+                                    <H1>  CÔNG DỤNG CỤ CÀ PHÊ </H1>
+</div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -244,7 +260,7 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
                     </li>
@@ -252,11 +268,11 @@
                             Nguyên phụ liệu pha chế
 
                         </a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu menu3">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                            <div class="column">
+                                    <H1> NGUYÊN LIỆU PHA CÀ PHÊ </H1>
+</div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -274,7 +290,7 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
                     </li>
@@ -283,11 +299,11 @@
                             Ly - Cốc - Tách - Phin
 
                         </a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu menu4">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                            <div class="column">
+                                    <H1>  Ly - Cốc - Tách - Phin </H1>
+</div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -305,7 +321,7 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
                     </li>
@@ -313,11 +329,11 @@
                             Giải pháp cho văn phòng
 
                         </a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu menu5">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                            <div class="column">
+                                    <H1> GIẢI PHÁP CHO VĂN PHÒNG</H1>
+</div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -335,7 +351,7 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
                     </li>
@@ -343,11 +359,11 @@
                             Quà tặng
 
                         </a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu menu6">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                            <div class="column">
+                                    <H1> QUÀ TẶNG </H1>
+</div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -365,7 +381,7 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
                     </li>
@@ -373,11 +389,11 @@
 
 
                         </a>
-                        <ul class="sub-menu">
+                        <ul class="sub-menu menu7">
                             <div class="row">
-                                <li class="column">
-                                    <H1> CÀ PHÊ </H1>
-                                </li>
+                                <div class="column">
+                                    <H1> CÔNG THỨC PHA CHẾ </H1>
+                                </div>
                                 <div class="column1">
                                     <li><a href="#">Cà phê chuyên biệt</a></li>
                                     <li><a href="#">Cà phê rang xoay</a>
@@ -395,7 +411,7 @@
                                     <li>
                                     </li>
                                 </div>
-                                <li class="column1"> Cà phê Hạt</li>
+                               <div class="column2"> Cà phê Hạt</li>
                             </div>
                         </ul>
                     </li>

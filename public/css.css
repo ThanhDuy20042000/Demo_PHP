@@ -50,6 +50,7 @@
     }
 
     .sub-menu {
+        opacity: 1;
         position: fixed;
         top: 0%;
         display: none;
@@ -58,13 +59,11 @@
 
     #menu li:hover .sub-menu {
         z-index: 1;
+        opacity: 9;
         position: absolute;
         display: inline-flex;
         left: 106%;
-    }
 
-    .sub-menu li {
-        margin-left: 0 !important;
     }
 
     .row {
@@ -73,15 +72,29 @@
         flex-wrap: wrap;
         /** Điều chỉnh hiệu ứng đáp ứng màn hình**/
         align-content: flex-start;
-        width: auto + 20px;
-        height: 400px;
+        width: 934px;
+        height: 335px;
         margin-right: 100px;
         background-color: rgb(255, 255, 255);
+
+    }
+
+    .column2 {
+        margin-left: 2%;
+        display: flex;
+
     }
 
     .column {
         display: flex;
-        width: 100%;
+    }
+
+    .column h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 27px;
+        margin-top: 2%;
+        margin-left: 2%;
+
     }
 
     .column1 {
@@ -306,4 +319,32 @@
 
     img {
         border-radius: 5px;
+    }
+
+    .menu1 {
+        top: -104%;
+    }
+
+    .menu2 {
+        top: -209%;
+    }
+
+    .menu3 {
+        top: -314%;
+    }
+
+    .menu4 {
+        top: -419%;
+    }
+
+    .menu5 {
+        top: -525%;
+    }
+
+    .menu6 {
+        top: -629%;
+    }
+
+    .menu7 {
+        top: -735%;
     }

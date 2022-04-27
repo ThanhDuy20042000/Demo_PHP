@@ -13,10 +13,10 @@
             <div class="ftem">
               
             <div class="block-search1">
-                <form class="form minisearch" id="search_mini_form" action="" method="get">
+                <form class="form minisearch" id="search_mini_form" action="index.php?act=timkiem" method="post">
                     <div class="field search">
                         <div class="control">
-                            <input id="search" type="text" name="q" value="" placeholder="Tìm tại đây vô vàn sản phẩm cà phê chính hãng từ tập đoàn Trung Nguyên Legend..." class="text-sm-le-des-gr input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both">
+                            <input id="search" type="text" name="smf" value="" placeholder="Tìm tại đây vô vàn sản phẩm cà phê chính hãng từ tập đoàn Trung Nguyên Legend..." class="text-sm-le-des-gr input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both">
                             <div id="search_autocomplete" class="search-autocomplete" style="display: none;"></div>
                         </div>
                     </div>

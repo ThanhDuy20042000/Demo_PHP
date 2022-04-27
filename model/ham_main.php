@@ -25,3 +25,13 @@ function main_phulieu() {
     $list_spcoffee = pdo_query($sql);
     return $list_spcoffee;
 }
+function timkiem($smf =""){
+    $sql = "select * from sanpham where 1"; // lấy sản phẩm mới nhất và lấy 6 sản phẩm
+    if( $smf!= ""){
+       $sql.= " and ten like '%".$smf."%' ";
+    }
+    $sql.="order by id desc limit 0,6  ";
+    $tk = pdo_query($sql);
+    return $tk;
+}
+

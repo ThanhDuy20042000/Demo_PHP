@@ -29,8 +29,6 @@ function giohang()
                 </tr>
                 ';
 }
-
-
 function hoadon()
 {
     $tongtien = 0;

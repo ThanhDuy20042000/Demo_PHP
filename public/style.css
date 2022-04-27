@@ -60,6 +60,7 @@
         width: 50%;
         max-width: 100%;
         display: block;
+        font-size: 14px;
     }
 
     .header_link>ul>li {
@@ -235,10 +236,13 @@
     a:active {
         color: rgb(197, 102, 58);
     }
+    a:hover {
+        color: rgb(197, 102, 58);
+    }
 
     /*Navi*/
     .navi {
-        width: 76%;
+        width: 73.5%;
         z-index: 10;
         float: right;
         left: 0px;
@@ -408,7 +412,7 @@
 
     b:hover {
         color: rgb(247 176 63 / 75%);
-        text-shadow: 5px 5px 5px rgb(0 0 0);
+        text-shadow: 5px 4px 9px rgb(0 0 0);
     }
 
     .spkm {
@@ -526,7 +530,7 @@
         color: white;
         font-size: 15px;
         width: 25%;
-        padding-right: 10px;
+        margin-right: 15px;
     }
 
     .row01 {
@@ -1047,15 +1051,59 @@
         -webkit-transform: scale(0, 1);
         transform: scale(0, 1);
     }
-    .column05 b{
+
+    .column05 b {
         font-size: 20px;
     }
+
     .column05 b:hover {
-        color: #000000;
+        color: #EA8025;
+        text-shadow: none;
     }
-    .column03 b{
+   
+    .column03 b {
         font-size: 20px;
     }
+
     .column03 b:hover {
-        color: #000000;
+        color: #EA8025;
+        text-shadow: none;
+    }
+
+    .dkdt {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: block;
+        margin-top: 5%;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .dk {
+        text-align: center;
+    }
+
+    input[type="password"i] {
+        -webkit-text-security: disc !important;
+        border-color: black;
+        font-weight: 400;
+        font-size: 14px;
+        background: #fff;
+        background-clip: padding-box;
+        border: solid 1px darkred;
+        border-radius: 5px;
+        height: 42px;
+        padding: 15px 16px 12px;
+        vertical-align: baseline;
+        width: 100%;
+        box-sizing: border-box
+    }
+
+    .update {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .blog{
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 2%;
     }

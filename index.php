@@ -104,11 +104,34 @@ if (isset($_GET['act'])) {
          }
          include "admin/sanpham/hoadon.php";
          break;
+         
       case 'hoanthanh':
          session_unset();
          include "admin/main.php";
          break;
+         
+      case 'timkiem':
+         if (isset($_POST['smf']) && ($_POST['smf'] != "")) {
+            $smf =$_POST['smf'];
+         }else{
+            $smf ="";
+         }
+         $sptk = timkiem($smf);
+         include "admin/timkiem/timkiem.php";
+         break;
 
+         case 'dkdt':
+            include "admin/dangky/dangkydt.php";
+            break;
+        
+         case 'ktbh':
+            include "admin/dangky/update.php";
+            break;
+          
+         case 'blog':
+            include "admin/dangky/blog.php";
+            break;
+          
 
 
       default:
