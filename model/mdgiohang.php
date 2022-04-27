@@ -60,11 +60,11 @@ function tongdon()
 }
 function datadh($ten, $sdt, $dc, $gc, $ngaydat, $tongdonhang)
 {
-    $sql = "insert into donhang(ten, sdt,diachi, ghichu, ngaydat, tongtien) value('$ten','$sdt','$dc','$gc','$ngaydat','$tongdonhang')";
+    $sql="insert into donhang(ten,sdt,diachi,ghichu,ngaydat,tongtien) value('$ten','$sdt','$dc','$gc','$ngaydat','$tongdonhang')";
     return pdo_query_lastInsertId($sql);
 }
-function datagh($img, $name, $gia, $soluong, $tongdon, $idbill)
+function datagh($img,$name,$gia,$soluong,$tongdon,$idbill)
 {
-    $sql = "insert into giohang(img,name, gia, soluong, tongdon, idbill) value('$img','$name','$gia','$soluong','$tongdon','$idbill')";
+    $sql="insert into giohang(img,name,gia,soluong,tongdon,idbill) value('$img','$name','$gia','$soluong','$tongdon','$idbill')";
     return pdo_query_lastInsertId($sql);
 }

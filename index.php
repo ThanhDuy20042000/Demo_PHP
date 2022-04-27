@@ -120,17 +120,17 @@ if (isset($_GET['act'])) {
          include "admin/timkiem/timkiem.php";
          break;
 
-         case 'dkdt':
-            include "admin/dangky/dangkydt.php";
-            break;
-        
-         case 'ktbh':
-            include "admin/dangky/update.php";
-            break;
-          
-         case 'blog':
-            include "admin/blog/blog.php";
-            break;
+      case 'dkdt':
+         include "admin/dangky/dangkydt.php";
+         break;
+      
+      case 'ktbh':
+         include "admin/dangky/update.php";
+         break;
+         
+      case 'blog':
+         include "admin/blog/blog.php";
+         break;
           
 
 
