@@ -460,8 +460,8 @@
     .cafe {
         display: flex;
         background: black;
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 8%;
+        padding-right: 8%;
         align-items: center;
     }
 
@@ -679,7 +679,7 @@
 
     .column03 img {
         border-radius: 25px;
-        height: 480px;
+        height: 84%;
         width: 100%;
         margin-bottom: 3%;
     }
