@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-<div class="footer_email">
-            <div class="ftem">
-            <h1>Đăng Ký Nhận Tin Từ Chúng Tôi</h1> </div>
-            <div class="ftem">
-              
+    <div class="footer_email">
+        <div class="ftem">
+            <h1>Đăng Ký Nhận Tin Từ Chúng Tôi</h1>
+        </div>
+        <div class="ftem">
             <div class="block-search1">
                 <form class="form minisearch" id="search_mini_form" action="index.php?act=timkiem" method="post">
                     <div class="field search">
@@ -22,10 +24,8 @@
                     </div>
                 </form>
             </div>
-            </div>
-            
-           
         </div>
+    </div>
     <div class="ft">
         <ul>
             <li>
@@ -139,7 +139,8 @@
         </ul>
     </div>
     <di class="ftduy">
-   <p> Copyright © 2022 by Thanh DuyIT. All right reserved.</p>
-    </div>
+        <p> Copyright © 2022 by Thanh DuyIT. All right reserved.</p>
+        </div>
 </body>
+
 </html>

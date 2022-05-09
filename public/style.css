@@ -25,7 +25,6 @@
         align-items: center;
         justify-content: center;
         padding-top: 1%;
-
     }
 
     .err {
@@ -154,8 +153,6 @@
 
     .headea {
         display: block;
-
-
     }
 
     .headea a {
@@ -164,14 +161,12 @@
         padding: 10px;
         border: solid;
         border-radius: 5px;
-
     }
 
     .headea a:hover {
         box-shadow: 0 2px 4px 0 rgb(29 56 227);
         color: #000000;
     }
-
 
     .block-search input {
         color: #333;
@@ -204,7 +199,6 @@
 
     .block-search {
         width: 80%;
-
     }
 
     .block-search1 {
@@ -237,6 +231,7 @@
     a:active {
         color: rgb(197, 102, 58);
     }
+
     a:hover {
         color: rgb(197, 102, 58);
     }
@@ -612,7 +607,6 @@
     .row03 {
         display: flex;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Tahoma, Geneva, Verdana, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Tahoma, Geneva, Verdana, sans-serif;
-
         justify-content: center;
         margin-left: 100px;
         margin-right: 100px;
@@ -636,14 +630,12 @@
         font-size: 2.5em;
         font-weight: 530;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
     }
 
     .row10 h1:hover {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: rgb(247, 176, 63);
         text-shadow: 5px 5px 5px rgb(0, 0, 0);
-
     }
 
     .column03 {
@@ -685,7 +677,6 @@
     }
 
     .column05 img {
-
         margin-bottom: 3%;
     }
 
@@ -768,15 +759,12 @@
         padding-right: 20px;
         display: flex;
         max-width: 100%;
-
-
-
+        width: 100%;
     }
 
     .ft ul li img {
-        height: 50%;
+        height: 35%;
         padding-right: 35px;
-
     }
 
     .ft1 ul {
@@ -836,7 +824,6 @@
         background-color: #000000;
         align-items: center;
         justify-content: center;
-
     }
 
     .ftduy p:hover {
@@ -845,13 +832,11 @@
         background-color: #000000;
         align-items: center;
         justify-content: center;
-
     }
 
     .ft3 {
         display: block;
         width: 50%;
-
     }
 
     .ulft {
@@ -896,8 +881,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-
-
     }
 
     .textft1 {
@@ -952,7 +935,6 @@
     .ttdh {
         width: 90%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
     }
 
     .ttgiohang {
@@ -994,8 +976,6 @@
 
     .ttdh table {
         margin-top: 13%;
-
-
     }
 
     .ttdh tr td {
@@ -1004,7 +984,6 @@
         border: 1px solid;
         font-weight: 500;
     }
-
 
     .imgw img {
         width: 85%;
@@ -1061,7 +1040,7 @@
         color: #EA8025;
         text-shadow: none;
     }
-   
+
     .column03 b {
         font-size: 20px;
     }
@@ -1103,7 +1082,8 @@
         text-align: center;
         margin-top: 5%;
     }
-    .blog{
+
+    .blog {
         margin-left: 25%;
         margin-right: 25%;
         margin-top: 2%;
